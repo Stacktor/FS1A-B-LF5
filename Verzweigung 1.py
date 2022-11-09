@@ -45,17 +45,27 @@ Spritart = input("Bitte geben Sie die Spritart ein: ")
 Diesel = 1.28
 Super = 1.36
 
-Netto = (Diesel * Spritgetankt)
-Brutto = round((Diesel * Spritgetankt) * 0.19 ,2)
-ins = (round((Diesel * Spritgetankt) + Brutto,2))
+#Rechnung Diesel
+
+Netto = round((Diesel * Spritgetankt),2)
+mws = round((Diesel * Spritgetankt) * 0.19 ,2)
+Brutto = (round((Diesel * Spritgetankt) + mws,2))
+
+#Rechnung Super
+
+Netto1 = round((Super * Spritgetankt),2)
+mws1 = round((Super * Spritgetankt) * 0.19 ,2)
+Brutto1 = (round((Super * Spritgetankt) + mws1,2))
 
 if Spritart == "Diesel":
-  print(Brutto)
-  print(Netto)
-  print(ins)
+  print(Brutto,"€")
+  print(Netto,"€")
+  print(mws,"€")
 
 elif Spritart == "Super":
-    print(Super)
+    print(Brutto1,"€")
+    print(Netto1,"€")
+    print(mws1,"€")
 
 
 else:
