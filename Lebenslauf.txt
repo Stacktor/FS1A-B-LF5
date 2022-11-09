@@ -1,0 +1,8 @@
+L E B E N S L A U F
+--------------------
+name: Thomas Graf 
+strasse: Erlhorst 15
+plz: 27753
+ort: Delmenhorst
+geboren: 07.12.2005
+hobbies: test
