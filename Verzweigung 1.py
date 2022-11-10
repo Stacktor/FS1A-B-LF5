@@ -1,19 +1,3 @@
-import tkinter as tk
-from tkinter import ttk
-import os
-
-
-
-"""
-menu = tk.Tk()
-menu.title("Projekte")
-menu.geometry("400x400")
-
-
-
-
-
-
 # Bestellbetrag
 
 Bestellbetrag = float(input("Bitte geben Sie den Bestellbetrag ein: "))
@@ -36,7 +20,7 @@ Temp1 = float(input("Enter the first number: "))
 if Temp1 > 30:
     print("Heute ist ein Schöner Tag")
 
-"""
+
 #Spritpreis
 
 Spritgetankt = float(input("Wie viel Liter Sprit haben Sie getankt? "))
