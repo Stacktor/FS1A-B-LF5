@@ -3,7 +3,7 @@
 eingabe = float(input("Jahresgehalt eingeben: "))
 familienstand: str = input("Familienstand eingeben: ")
 
-if eingabe
+if eingabe > 75000 and familienstand == "ledig":
 
 elif 48000 < eingabe < 75000:
     print("Sie zahlen 20% Steuer")
