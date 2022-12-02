@@ -1,7 +1,7 @@
 # Input
-monatsgehalt = float(input("Geben Sie Ihr Monatsgehalt ein: "))
+monatsgehalt = float(input("Geben Sie Ihr Monatsgehalt in E24uro ein: "))
 kinder = float(input("Geben Sie die Anzahl ihrer Kinder ein: "))
-dauerbetrieb = float(input("Arbeitsangehörigkeit im Betrieb (in Jahren): "))
+dauerbetrieb = float(input("Arbeitsangehörigkeit im Betrieb in Jahren: "))
 
 # Berechnung
 if dauerbetrieb < 10:
