@@ -1,12 +1,11 @@
 # Input
-monatsgehalt = float(input("Geben Sie Ihr Monatsgehalt in E24uro ein: "))
+monatsgehalt = float(input("Geben Sie Ihr Monatsgehalt in Euro ein: "))
 kinder = float(input("Geben Sie die Anzahl ihrer Kinder ein: "))
 dauerbetrieb = float(input("Arbeitsangehörigkeit im Betrieb in Jahren: "))
 
-# Berechnung
 if dauerbetrieb < 10:
-    fehltage = float(input("Geben Sie die Anzahl der fehlenden Tage ein: "))
-
+    fehltage = float(input("Geben sie fehltage an"))
+# Berechnung
 if dauerbetrieb > 3:
     if dauerbetrieb < 10:
         if fehltage > 20:
@@ -17,7 +16,7 @@ if dauerbetrieb > 3:
         bonus = monatsgehalt
 else:
     if fehltage <= 2:
-        bonus = monatsgehalt * 0.01
+        bonus = monatsgehalt * 0.1
     else:
         bonus = 0
 
