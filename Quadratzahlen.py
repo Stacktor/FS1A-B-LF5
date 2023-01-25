@@ -1,6 +1,7 @@
 zahl = 1
 quadrat=1
-while(quadrat<=100):
+while(quadrat<100):
     quadrat=zahl
-    print(quadrat*quadrat)
-    zahl+1
+    quadrat=quadrat*quadrat
+    print(quadrat)
+    zahl=zahl+1
