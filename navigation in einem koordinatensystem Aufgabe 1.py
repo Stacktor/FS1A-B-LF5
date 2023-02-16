@@ -8,7 +8,7 @@ while True:
     print(f"Sie sind bei {x} | {y}.")
 
     # Die Benutzereingabe lesen
-    eingabe = input("Wohin wollen Sie gehen? (o/n/w/s/b): ")
+    eingabe = input("Wohin wollen Sie gehen? (o/n/w/s/b = beenden): ")
 
     # Die Eingabe überprüfen und die Position entsprechend ändern
     if eingabe == "o":
