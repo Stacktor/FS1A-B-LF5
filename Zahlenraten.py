@@ -1,11 +1,11 @@
 import random
 durchgang = 0
 aktiv = True
-ratezahl = random.randint(0,100)
+ratezahl = random.randint(0,20)
 
 while aktiv:
     durchgang = durchgang + 1
-    print()   # für Abstand (nur Optik)
+    print()   
     print(durchgang)
     benutzereingabe = int (input("Bitte Zahl eingeben: "))
     
