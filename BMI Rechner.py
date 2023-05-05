@@ -39,7 +39,7 @@ def BMIAusgeben(geschlecht,BMI):
 
 
 
-def printkplul(BMI,hcm):
+def print_gesamt(BMI,hcm):
     print("Der berechneter BMI liegt bei:  ",BMI)
     print("ihr normalgewicht liegt bei:  ",hcm-100)
     print("dein idealgewicht wäre bei:  ",(hcm-100)*(-0.1)+(hcm-100))
@@ -49,4 +49,4 @@ if __name__ == "__main__":
     hm, w, hcm = normalgewicht()
     BMI, geschlecht = BMIBerechnen(hm,w)
     BMIAusgeben(geschlecht,BMI)
-    printkplul(BMI,hcm)
+    print_gesamt(BMI,hcm)
