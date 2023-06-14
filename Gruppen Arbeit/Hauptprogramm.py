@@ -1,6 +1,6 @@
-def ausgeben(gesamtNote,Datum,Jahr,xGh1,xGh2,xWiso):
+def ausgeben(gesamtNote,jahr,xGh1,xGh2,xWiso):
     if(gesamtNote >= 50):
-        print("Prüfung vom:\t\t\t\t\t",DT,DM,".",Jahr)
+        print("Prüfung vom:\t\t\t\t\t",DT,DM,".",jahr)
         print("Gesamtnote der schriftlichen Leistungen:\t",gesamtNote,"%")
         print("Einzelleistungen")
         print("\tGH1\t\t",xGh1,"%")
@@ -9,7 +9,7 @@ def ausgeben(gesamtNote,Datum,Jahr,xGh1,xGh2,xWiso):
         print("Herzlichen Glückwunsch zum Bestehen des ersten Prüfungsteils!")
         print("Damit sind Sie zur mündlichen Prüfung zugelassen!")
     else:
-        print("Prüfung vom:\t\t\t\t\t",DT, DM)
+        print("Prüfung vom:\t\t\t\t\t",DT, DM, ".",jahr)
         print("Gesamtnote der schriftlichen Leistungen:\t",gesamtNote,"%")
         print("Einzelleistungen")
         print("\tGH1\t\t",xGh1,"%")
@@ -70,7 +70,7 @@ def pruefeDatum(DT,DM,pj):
                 Datum=1
     else :
         Datum=1
-    return Datum
+        return Datum
 def kalkulatorNote(ermittleNote):
     vNote = int(ermittleNote)
     
@@ -182,10 +182,11 @@ def kalkulatorNote(ermittleNote):
 
 
 
-Datum=1
+
 jahr = int(input("Prüfungsjahr angeben: "))
 pj = pruefeJahr(jahr)
 if pj == 0:
+    print("Eingegebenes Jahr ist ungültig")
     exit(0)
 else:
     DT = int(input("Genauen Tag angeben: "))
@@ -202,4 +203,4 @@ else:
 
 
 kN = kalkulatorNote(eN)
-aus = ausgeben(eN, Datum, jahr, gh1, gh2, wiso)
+aus = ausgeben(eN, pd, jahr, gh1, gh2, wiso)
